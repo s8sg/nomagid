@@ -195,11 +195,6 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="winter-card">
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/9706a6de3c412244383430df8e8c63eca70bab85?width=648"
-          alt="Winter mountain landscape with explorer"
-          class="hero-image"
-        />
         <div class="cta-button" onclick="alert('Let\\'s go on a winter vacation! 🏔️❄️')">
           <div class="button-text">
             Let's Go!
