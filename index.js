@@ -44,9 +44,10 @@ const server = http.createServer((req, res) => {
         }
         .hero-image {
           width: 100%;
-          height: 400px;
+          height: 100%;
           object-fit: cover;
           object-position: center;
+          border-radius: 21px;
         }
         .content-container {
           padding: 40px 32px 48px 32px;
@@ -292,31 +293,11 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="winter-card">
-        <img 
+        <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/9706a6de3c412244383430df8e8c63eca70bab85?width=648"
           alt="Winter mountain landscape with explorer"
           class="hero-image"
         />
-        <div class="content-container">
-          <div class="title">
-            Winter<br>
-            Vacation Trips
-          </div>
-          <div class="description">
-            Enjoy your winter vacations with warmth and amazing sightseeing on
-            the mountains. Enjoy the best experience with us!
-          </div>
-          <div class="cta-button">
-            <div class="button-text">
-              Let's Go!
-            </div>
-            <div class="arrow-icon">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.16667 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
       </div>
     </body>
     </html>
