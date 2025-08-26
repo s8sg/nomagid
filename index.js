@@ -49,63 +49,6 @@ const server = http.createServer((req, res) => {
           object-position: center;
           border-radius: 21px;
         }
-        .content-container {
-          padding: 40px 32px 48px 32px;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          min-height: 0;
-        }
-        .title {
-          font-size: 48px;
-          font-weight: 600;
-          line-height: 1.17;
-          color: #FFFFFF;
-          margin-bottom: 24px;
-          letter-spacing: -0.02em;
-        }
-        .description {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #FFFFFF;
-          opacity: 0.9;
-          margin-bottom: 40px;
-          flex: 1;
-        }
-        .cta-button {
-          border-radius: 25px;
-          padding: 16px 32px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 12px;
-          cursor: pointer;
-          transition: all 0.2s ease;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-          background-color: #4C3A8A;
-          min-height: 48px;
-          touch-action: manipulation;
-        }
-        .cta-button:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-        }
-        .cta-button:active {
-          transform: translateY(0);
-        }
-        .button-text {
-          font-size: 18px;
-          font-weight: 500;
-          color: #FFFFFF;
-          line-height: 1.33;
-        }
-        .arrow-icon {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
 
         /* Tablet styles */
         @media (max-width: 1024px) {
@@ -117,9 +60,6 @@ const server = http.createServer((req, res) => {
             max-width: 400px;
             height: auto;
             min-height: 700px;
-          }
-          .hero-image {
-            height: 350px;
           }
         }
 
@@ -136,27 +76,7 @@ const server = http.createServer((req, res) => {
             box-shadow: 20px 20px 40px 10px rgba(0,0,0,0.08);
           }
           .hero-image {
-            height: 320px;
-          }
-          .content-container {
-            padding: 36px 28px 44px 28px;
-          }
-          .title {
-            font-size: 42px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-          }
-          .description {
-            font-size: 17px;
-            line-height: 1.53;
-            margin-bottom: 36px;
-          }
-          .cta-button {
-            padding: 18px 36px;
-            min-height: 52px;
-          }
-          .button-text {
-            font-size: 19px;
+            border-radius: 16px;
           }
         }
 
@@ -165,21 +85,6 @@ const server = http.createServer((req, res) => {
           .winter-card {
             max-width: 90%;
             min-height: 500px;
-          }
-          .hero-image {
-            height: 250px;
-          }
-          .content-container {
-            padding: 24px 20px 32px 20px;
-          }
-          .title {
-            font-size: 32px;
-            line-height: 1.25;
-            margin-bottom: 16px;
-          }
-          .description {
-            font-size: 15px;
-            margin-bottom: 24px;
           }
         }
 
@@ -199,28 +104,7 @@ const server = http.createServer((req, res) => {
             box-shadow: 15px 15px 30px 8px rgba(0,0,0,0.08);
           }
           .hero-image {
-            height: 300px;
-          }
-          .content-container {
-            padding: 32px 24px 40px 24px;
-          }
-          .title {
-            font-size: 36px;
-            line-height: 1.22;
-            margin-bottom: 20px;
-          }
-          .description {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 32px;
-          }
-          .cta-button {
-            padding: 16px 32px;
-            min-height: 50px;
-            gap: 10px;
-          }
-          .button-text {
-            font-size: 17px;
+            border-radius: 14px;
           }
         }
 
@@ -236,27 +120,7 @@ const server = http.createServer((req, res) => {
             min-height: 85vh;
           }
           .hero-image {
-            height: 280px;
-          }
-          .content-container {
-            padding: 28px 20px 36px 20px;
-          }
-          .title {
-            font-size: 32px;
-            line-height: 1.25;
-            margin-bottom: 18px;
-          }
-          .description {
-            font-size: 15px;
-            line-height: 1.47;
-            margin-bottom: 28px;
-          }
-          .cta-button {
-            padding: 14px 28px;
-            min-height: 48px;
-          }
-          .button-text {
-            font-size: 16px;
+            border-radius: 12px;
           }
         }
 
@@ -266,27 +130,7 @@ const server = http.createServer((req, res) => {
             min-height: 90vh;
           }
           .hero-image {
-            height: 260px;
-          }
-          .content-container {
-            padding: 24px 16px 32px 16px;
-          }
-          .title {
-            font-size: 28px;
-            line-height: 1.29;
-            margin-bottom: 16px;
-          }
-          .description {
-            font-size: 14px;
-            line-height: 1.43;
-            margin-bottom: 24px;
-          }
-          .cta-button {
-            padding: 12px 24px;
-            min-height: 44px;
-          }
-          .button-text {
-            font-size: 15px;
+            border-radius: 10px;
           }
         }
       </style>
