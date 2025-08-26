@@ -90,11 +90,11 @@ export default function MyComponent(props) {
           </div>
           <div
             style={{
-              padding: "32px 24px",
+              padding: "24px 24px 48px 24px",
               flex: "1",
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
+              justifyContent: "flex-start",
               alignItems: "center",
               textAlign: "center",
             }}
@@ -104,13 +104,33 @@ export default function MyComponent(props) {
               style={{
                 fontSize: "28px",
                 fontWeight: "600",
-                color: "#333333",
                 lineHeight: "36px",
-                marginBottom: "16px",
+                marginBottom: "20px",
+                marginTop: "-8px",
               }}
               className="card-title"
             >
-              Welcome to Bangkok
+              <span
+                style={{
+                  color: "#4C3A8A",
+                  textShadow: "0 2px 4px rgba(76, 58, 138, 0.3)",
+                }}
+              >
+                Welcome to{" "}
+              </span>
+              <span
+                style={{
+                  background: "linear-gradient(135deg, #8B7ED8, #4C3A8A)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  fontWeight: "700",
+                  textShadow: "0 3px 6px rgba(139, 126, 216, 0.4)",
+                  letterSpacing: "0.5px",
+                }}
+              >
+                Bangkok
+              </span>
             </div>
             <div
               style={{
@@ -119,6 +139,8 @@ export default function MyComponent(props) {
                 color: "#666666",
                 lineHeight: "24px",
                 maxWidth: "260px",
+                marginBottom: "32px",
+                marginTop: "-4px",
               }}
               className="card-description"
             >
