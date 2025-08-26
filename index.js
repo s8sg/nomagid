@@ -51,18 +51,18 @@ const server = http.createServer((req, res) => {
         }
         .info-card {
           position: absolute;
-          bottom: 100px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 280px;
-          background-color: #FFFFFF;
-          border-radius: 16px;
-          box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(255, 255, 255, 0.95);
+          display: flex;
+          flex-direction: column;
           overflow: hidden;
         }
         .image-container {
           position: relative;
-          height: 120px;
+          height: 300px;
           overflow: hidden;
         }
         .bangkok-image {
@@ -76,19 +76,32 @@ const server = http.createServer((req, res) => {
           bottom: 0;
           left: 0;
           right: 0;
-          height: 40px;
-          background: linear-gradient(transparent, white);
+          height: 60px;
+          background: linear-gradient(transparent, rgba(255, 255, 255, 0.95));
           pointer-events: none;
         }
         .card-content {
-          padding: 16px;
+          padding: 32px 24px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .card-title {
+          font-size: 28px;
+          font-weight: 600;
+          color: #333333;
+          line-height: 36px;
+          margin-bottom: 16px;
         }
         .card-description {
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
-          color: #333333;
-          line-height: 20px;
-          text-align: center;
+          color: #666666;
+          line-height: 24px;
+          max-width: 260px;
         }
         .cta-button {
           position: absolute;
@@ -140,16 +153,20 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 16px;
           }
-          .info-card {
-            width: 260px;
-            bottom: 90px;
-          }
           .image-container {
-            height: 110px;
+            height: 280px;
+          }
+          .card-content {
+            padding: 28px 20px;
+          }
+          .card-title {
+            font-size: 26px;
+            line-height: 34px;
           }
           .card-description {
-            font-size: 13px;
-            line-height: 18px;
+            font-size: 15px;
+            line-height: 22px;
+            max-width: 240px;
           }
           .cta-button {
             padding: 14px 28px;
@@ -186,19 +203,21 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 14px;
           }
-          .info-card {
-            width: 240px;
-            bottom: 80px;
-          }
           .image-container {
-            height: 100px;
+            height: 250px;
           }
           .card-content {
-            padding: 14px;
+            padding: 24px 20px;
+          }
+          .card-title {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 14px;
           }
           .card-description {
-            font-size: 12px;
-            line-height: 17px;
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 220px;
           }
           .cta-button {
             padding: 12px 24px;
@@ -223,19 +242,21 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 12px;
           }
-          .info-card {
-            width: 220px;
-            bottom: 70px;
-          }
           .image-container {
-            height: 90px;
+            height: 220px;
           }
           .card-content {
-            padding: 12px;
+            padding: 20px 16px;
+          }
+          .card-title {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 12px;
           }
           .card-description {
-            font-size: 11px;
-            line-height: 16px;
+            font-size: 13px;
+            line-height: 18px;
+            max-width: 200px;
           }
           .cta-button {
             padding: 10px 20px;
@@ -269,8 +290,11 @@ const server = http.createServer((req, res) => {
             <div class="fade-overlay"></div>
           </div>
           <div class="card-content">
+            <div class="card-title">
+              Welcome to Bangkok
+            </div>
             <div class="card-description">
-              Welcome to Bangkok. Let's explore the city that never amaze to surprise with its magnificent temples, shopping mall and rooftop bars.
+              Let's explore the city that never amaze to surprise with its magnificent temples, shopping mall and rooftop bars.
             </div>
           </div>
         </div>

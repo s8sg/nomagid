@@ -44,13 +44,13 @@ export default function MyComponent(props) {
         <div
           style={{
             position: "absolute",
-            bottom: "100px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: "280px",
-            backgroundColor: "#FFFFFF",
-            borderRadius: "16px",
-            boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+            top: "0",
+            left: "0",
+            right: "0",
+            bottom: "0",
+            backgroundColor: "rgba(255, 255, 255, 0.95)",
+            display: "flex",
+            flexDirection: "column",
             overflow: "hidden",
           }}
           className="info-card"
@@ -58,7 +58,7 @@ export default function MyComponent(props) {
           <div
             style={{
               position: "relative",
-              height: "120px",
+              height: "300px",
               overflow: "hidden",
             }}
             className="image-container"
@@ -81,8 +81,8 @@ export default function MyComponent(props) {
                 bottom: "0",
                 left: "0",
                 right: "0",
-                height: "40px",
-                background: "linear-gradient(transparent, white)",
+                height: "60px",
+                background: "linear-gradient(transparent, rgba(255, 255, 255, 0.95))",
                 pointerEvents: "none",
               }}
               className="fade-overlay"
@@ -90,21 +90,39 @@ export default function MyComponent(props) {
           </div>
           <div
             style={{
-              padding: "16px",
+              padding: "32px 24px",
+              flex: "1",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
             }}
             className="card-content"
           >
             <div
               style={{
-                fontSize: "14px",
-                fontWeight: "400",
+                fontSize: "28px",
+                fontWeight: "600",
                 color: "#333333",
-                lineHeight: "20px",
-                textAlign: "center",
+                lineHeight: "36px",
+                marginBottom: "16px",
+              }}
+              className="card-title"
+            >
+              Welcome to Bangkok
+            </div>
+            <div
+              style={{
+                fontSize: "16px",
+                fontWeight: "400",
+                color: "#666666",
+                lineHeight: "24px",
+                maxWidth: "260px",
               }}
               className="card-description"
             >
-              Welcome to Bangkok. Let's explore the city that never amaze to surprise with its magnificent temples, shopping mall and rooftop bars.
+              Let's explore the city that never amaze to surprise with its magnificent temples, shopping mall and rooftop bars.
             </div>
           </div>
         </div>
