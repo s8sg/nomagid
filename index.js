@@ -114,6 +114,13 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 16px;
           }
+          .cta-button {
+            padding: 18px 36px;
+            min-height: 52px;
+          }
+          .button-text {
+            font-size: 19px;
+          }
         }
 
         /* Mobile landscape */
@@ -142,6 +149,14 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 14px;
           }
+          .cta-button {
+            padding: 16px 32px;
+            min-height: 50px;
+            gap: 10px;
+          }
+          .button-text {
+            font-size: 17px;
+          }
         }
 
         /* Small mobile */
@@ -157,6 +172,13 @@ const server = http.createServer((req, res) => {
           }
           .hero-image {
             border-radius: 12px;
+          }
+          .cta-button {
+            padding: 14px 28px;
+            min-height: 48px;
+          }
+          .button-text {
+            font-size: 16px;
           }
         }
 
