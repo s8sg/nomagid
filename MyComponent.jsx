@@ -41,6 +41,64 @@ export default function MyComponent(props) {
           }}
           className="hero-image"
         />
+        <div
+          style={{
+            position: "absolute",
+            bottom: "32px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            borderRadius: "25px",
+            padding: "16px 32px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "12px",
+            cursor: "pointer",
+            transition: "all 0.2s ease",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+            backgroundColor: "#4C3A8A",
+            minHeight: "48px",
+            touchAction: "manipulation",
+          }}
+          className="cta-button"
+          onClick={() => {
+            alert("Let's go on a winter vacation! 🏔️❄️");
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.transform = "translateX(-50%) translateY(-2px)";
+            e.target.style.boxShadow = "0 6px 16px rgba(0,0,0,0.2)";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.transform = "translateX(-50%) translateY(0)";
+            e.target.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
+          }}
+        >
+          <div
+            style={{
+              fontSize: "18px",
+              fontWeight: "500",
+              color: "#FFFFFF",
+              lineHeight: "24px",
+            }}
+            className="button-text"
+          >
+            Let's Go!
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+            className="arrow-icon"
+          >
+            <div
+              dangerouslySetInnerHTML={{
+                __html: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.16667 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path></svg>'
+              }}
+            />
+          </div>
+        </div>
       </div>
     </>
   );
