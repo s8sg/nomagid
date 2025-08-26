@@ -44,6 +44,73 @@ export default function MyComponent(props) {
         <div
           style={{
             position: "absolute",
+            bottom: "100px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "280px",
+            backgroundColor: "#FFFFFF",
+            borderRadius: "16px",
+            boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+            overflow: "hidden",
+          }}
+          className="info-card"
+        >
+          <div
+            style={{
+              position: "relative",
+              height: "120px",
+              overflow: "hidden",
+            }}
+            className="image-container"
+          >
+            <RawImg
+              $name="bangkok-image"
+              image="https://images.pexels.com/photos/11105012/pexels-photo-11105012.jpeg"
+              altText="A scenic view of Wat Arun temple from a riverboat in Bangkok"
+              css={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
+              className="bangkok-image"
+            />
+            <div
+              style={{
+                position: "absolute",
+                bottom: "0",
+                left: "0",
+                right: "0",
+                height: "40px",
+                background: "linear-gradient(transparent, white)",
+                pointerEvents: "none",
+              }}
+              className="fade-overlay"
+            />
+          </div>
+          <div
+            style={{
+              padding: "16px",
+            }}
+            className="card-content"
+          >
+            <div
+              style={{
+                fontSize: "14px",
+                fontWeight: "400",
+                color: "#333333",
+                lineHeight: "20px",
+                textAlign: "center",
+              }}
+              className="card-description"
+            >
+              Welcome to Bangkok. Let's explore the city that never amaze to surprise with its magnificent temples, shopping mall and rooftop bars.
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            position: "absolute",
             bottom: "32px",
             left: "50%",
             transform: "translateX(-50%)",
@@ -59,7 +126,7 @@ export default function MyComponent(props) {
           }}
           className="cta-button"
           onClick={() => {
-            alert("Let's explore winter adventures! 🏔️❄️");
+            alert("Let's explore Bangkok adventures! 🏛️🇹🇭");
           }}
         >
           <div

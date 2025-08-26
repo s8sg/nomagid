@@ -49,6 +49,47 @@ const server = http.createServer((req, res) => {
           object-position: center;
           border-radius: 21px;
         }
+        .info-card {
+          position: absolute;
+          bottom: 100px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 280px;
+          background-color: #FFFFFF;
+          border-radius: 16px;
+          box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+          overflow: hidden;
+        }
+        .image-container {
+          position: relative;
+          height: 120px;
+          overflow: hidden;
+        }
+        .bangkok-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        .fade-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 40px;
+          background: linear-gradient(transparent, white);
+          pointer-events: none;
+        }
+        .card-content {
+          padding: 16px;
+        }
+        .card-description {
+          font-size: 14px;
+          font-weight: 400;
+          color: #333333;
+          line-height: 20px;
+          text-align: center;
+        }
         .cta-button {
           position: absolute;
           bottom: 32px;
@@ -99,6 +140,17 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 16px;
           }
+          .info-card {
+            width: 260px;
+            bottom: 90px;
+          }
+          .image-container {
+            height: 110px;
+          }
+          .card-description {
+            font-size: 13px;
+            line-height: 18px;
+          }
           .cta-button {
             padding: 14px 28px;
             min-height: 48px;
@@ -134,6 +186,20 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 14px;
           }
+          .info-card {
+            width: 240px;
+            bottom: 80px;
+          }
+          .image-container {
+            height: 100px;
+          }
+          .card-content {
+            padding: 14px;
+          }
+          .card-description {
+            font-size: 12px;
+            line-height: 17px;
+          }
           .cta-button {
             padding: 12px 24px;
             min-height: 44px;
@@ -157,6 +223,20 @@ const server = http.createServer((req, res) => {
           .hero-image {
             border-radius: 12px;
           }
+          .info-card {
+            width: 220px;
+            bottom: 70px;
+          }
+          .image-container {
+            height: 90px;
+          }
+          .card-content {
+            padding: 12px;
+          }
+          .card-description {
+            font-size: 11px;
+            line-height: 16px;
+          }
           .cta-button {
             padding: 10px 20px;
             min-height: 40px;
@@ -179,7 +259,22 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="winter-card">
-        <div class="cta-button" onclick="alert('Let\\'s explore winter adventures! 🏔️❄️')">
+        <div class="info-card">
+          <div class="image-container">
+            <img
+              src="https://images.pexels.com/photos/11105012/pexels-photo-11105012.jpeg"
+              alt="A scenic view of Wat Arun temple from a riverboat in Bangkok"
+              class="bangkok-image"
+            />
+            <div class="fade-overlay"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-description">
+              Welcome to Bangkok. Let's explore the city that never amaze to surprise with its magnificent temples, shopping mall and rooftop bars.
+            </div>
+          </div>
+        </div>
+        <div class="cta-button" onclick="alert('Let\\'s explore Bangkok adventures! 🏛️🇹🇭')">
           <div class="button-text">
             Let's Explore
           </div>
