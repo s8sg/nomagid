@@ -54,36 +54,21 @@ const server = http.createServer((req, res) => {
           bottom: 32px;
           left: 50%;
           transform: translateX(-50%);
-          border-radius: 25px;
-          padding: 16px 32px;
+          border-radius: 8px;
+          padding: 12px 24px;
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 12px;
           cursor: pointer;
-          transition: all 0.2s ease;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
           background-color: #4C3A8A;
-          min-height: 48px;
+          min-height: 44px;
           touch-action: manipulation;
         }
-        .cta-button:hover {
-          transform: translateX(-50%) translateY(-2px);
-          box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-        }
-        .cta-button:active {
-          transform: translateX(-50%) translateY(0);
-        }
         .button-text {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 500;
           color: #FFFFFF;
-          line-height: 24px;
-        }
-        .arrow-icon {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          line-height: 20px;
         }
 
         /* Tablet styles */
@@ -115,11 +100,11 @@ const server = http.createServer((req, res) => {
             border-radius: 16px;
           }
           .cta-button {
-            padding: 18px 36px;
-            min-height: 52px;
+            padding: 14px 28px;
+            min-height: 48px;
           }
           .button-text {
-            font-size: 19px;
+            font-size: 17px;
           }
         }
 
@@ -150,12 +135,11 @@ const server = http.createServer((req, res) => {
             border-radius: 14px;
           }
           .cta-button {
-            padding: 16px 32px;
-            min-height: 50px;
-            gap: 10px;
+            padding: 12px 24px;
+            min-height: 44px;
           }
           .button-text {
-            font-size: 17px;
+            font-size: 16px;
           }
         }
 
@@ -174,11 +158,11 @@ const server = http.createServer((req, res) => {
             border-radius: 12px;
           }
           .cta-button {
-            padding: 14px 28px;
-            min-height: 48px;
+            padding: 10px 20px;
+            min-height: 40px;
           }
           .button-text {
-            font-size: 16px;
+            font-size: 15px;
           }
         }
 
@@ -195,14 +179,9 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="winter-card">
-        <div class="cta-button" onclick="alert('Let\\'s go on a winter vacation! 🏔️❄️')">
+        <div class="cta-button" onclick="alert('Let\\'s explore winter adventures! 🏔️❄️')">
           <div class="button-text">
-            Let's Go!
-          </div>
-          <div class="arrow-icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.16667 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+            Let's Explore
           </div>
         </div>
       </div>
