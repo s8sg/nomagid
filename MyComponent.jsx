@@ -92,7 +92,7 @@ export default function MyComponent(props) {
             style={{
               color: "#333333",
               fontSize: "28px",
-              fontWeight: "600",
+              fontWeight: "700",
               lineHeight: "36px",
               margin: "20px 0 16px",
               textAlign: "center",

@@ -154,19 +154,20 @@ const server = http.createServer((req, res) => {
             border-radius: 16px;
           }
           .image-container {
-            height: 280px;
+            height: 380px;
           }
           .card-content {
             padding: 28px 20px;
           }
           .card-title {
-            font-size: 26px;
-            line-height: 34px;
+            font-size: 34px;
+            line-height: 40px;
+            font-weight: 700;
           }
           .card-description {
-            font-size: 15px;
-            line-height: 22px;
-            max-width: 240px;
+            font-size: 19px;
+            line-height: 26px;
+            max-width: 280px;
           }
           .cta-button {
             padding: 14px 28px;
@@ -204,20 +205,21 @@ const server = http.createServer((req, res) => {
             border-radius: 14px;
           }
           .image-container {
-            height: 250px;
+            height: 350px;
           }
           .card-content {
             padding: 24px 20px;
           }
           .card-title {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 32px;
+            line-height: 38px;
             margin-bottom: 14px;
+            font-weight: 700;
           }
           .card-description {
-            font-size: 14px;
-            line-height: 20px;
-            max-width: 220px;
+            font-size: 18px;
+            line-height: 26px;
+            max-width: 280px;
           }
           .cta-button {
             padding: 12px 24px;
@@ -243,20 +245,21 @@ const server = http.createServer((req, res) => {
             border-radius: 12px;
           }
           .image-container {
-            height: 220px;
+            height: 320px;
           }
           .card-content {
             padding: 20px 16px;
           }
           .card-title {
-            font-size: 22px;
-            line-height: 28px;
+            font-size: 28px;
+            line-height: 34px;
             margin-bottom: 12px;
+            font-weight: 700;
           }
           .card-description {
-            font-size: 13px;
-            line-height: 18px;
-            max-width: 200px;
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 260px;
           }
           .cta-button {
             padding: 10px 20px;
