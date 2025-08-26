@@ -90,28 +90,30 @@ export default function MyComponent(props) {
           </div>
           <div
             style={{
-              padding: "32px 24px",
-              flex: "1",
+              color: "#333333",
+              fontSize: "28px",
+              fontWeight: "600",
+              lineHeight: "36px",
+              margin: "20px 0 16px",
+              textAlign: "center",
+            }}
+            className="card-title"
+          >
+            Welcome to Bangkok
+          </div>
+          <div
+            style={{
               display: "flex",
+              alignItems: "center",
+              flex: "1",
               flexDirection: "column",
               justifyContent: "center",
-              alignItems: "center",
               textAlign: "center",
+              marginTop: "12px",
+              padding: "0 14px 99px 16px",
             }}
             className="card-content"
           >
-            <div
-              style={{
-                fontSize: "28px",
-                fontWeight: "600",
-                color: "#333333",
-                lineHeight: "36px",
-                marginBottom: "16px",
-              }}
-              className="card-title"
-            >
-              Welcome to Bangkok
-            </div>
             <div
               style={{
                 fontSize: "16px",
@@ -119,6 +121,7 @@ export default function MyComponent(props) {
                 color: "#666666",
                 lineHeight: "24px",
                 maxWidth: "260px",
+                marginTop: "-70px",
               }}
               className="card-description"
             >
